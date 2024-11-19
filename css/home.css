@@ -1,0 +1,24 @@
+:root {
+    --bs-primary-color: #007F5F;
+    --bs-secondary-color: #81BC4E;
+    --bs-tertiary-color:#E9EDC9;
+    --bs-complimentary-color: #000000;
+    --bs-body-mobile: 14px;
+    --bs-h3-mobile: 18px;
+    --bs-h2-mobile: 24px;
+    --bs-h1-mobile: 32px;
+    --bs-body-tablet: 18px;
+    --bs-h1-tablet: 40px;
+    --bs-h2-tablet: 32px;
+    --bs-h3-tablet: 24px;
+    --bs-body-desktop: 18px;
+    --bs-h1-desktop: 48px;
+    --bs-h2-desktop: 36px;
+    --bs-h3-desktop: 24px;
+    --bs-btn-font-desktop: 18px;
+    --bs-btn-font-tablet: 18px;
+    --bs-btn-font-mobile: 15px;
+
+}
+
+
