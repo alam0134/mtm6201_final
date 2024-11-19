@@ -21,6 +21,53 @@
 
 }
 
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 1rem 1rem;
+    font-size: var(--bs-btn-font-tablet);
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--bs-primary-color);
+    border-color: var(--bs-primary-color);
+    border-radius: 12px;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: var(--bs-primary-color);
+    border-color: var(--bs-primary-color);
+    box-shadow: 3px 3px 0px var(--bs-secondary-color); 
+}
+.btn-outline-secondary {
+    border-radius: 12px;
+    color: var(--bs-complimentary-color);
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    color: #ffffff;
+    background-color: var(--bs-primary-color);
+    border-color: var(--bs-primary-color);
+    box-shadow: 3px 3px 0px var(--bs-secondary-color);
+    transition: all 0.3s;
+}
+
 h1 {
     font-family: "Italiana", sans-serif;
 }
@@ -35,63 +82,7 @@ h3 {
 
 body {
     font-family: "Inter", sans-serif;
-}
-
-@media only screen and (max-width: 576px) {
-    body {
-        font-size: var(--bs-body-mobile);
-    }
-    h1 {
-        font-size: var(--bs-h1-mobile);
-    }
-    h2 {
-        font-size: var(--bs-h2-mobile);
-    }
-    h3 {
-        font-size: var(--bs-h3-mobile);
-    }
-}
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: var(--bs-body-tablet);
-    }
-    h1 {
-        font-size: var(--bs-h1-tablet);
-    }
-    h2 {
-        font-size: var(--bs-h2-tablet);
-    }
-    h3 {
-        font-size: var(--bs-h3-tablet);
-    }
-}
-@media only screen and (max-width: 992px) {
-    body {
-        font-size: var(--bs-body-desktop);
-    }
-    h1 {
-        font-size: var(--bs-h1-desktop);
-    }
-    h2 {
-        font-size: var(--bs-h2-desktop);
-    }
-    h3 {
-        font-size: var(--bs-h3-desktop);
-    }
-}
-@media only screen and (max-width: 1292px) {
-    body {
-        font-size: var(--bs-body-desktop);
-    }
-    h1 {
-        font-size: var(--bs-h1-desktop);
-    }
-    h2 {
-        font-size: var(--bs-h2-desktop);
-    }
-    h3 {
-        font-size: var(--bs-h3-desktop);
-    }
+    font-size: var(--bs-body-mobile);
 }
 
 body {
@@ -127,5 +118,63 @@ body {
 .navbar-nav .nav-item .svg, .nav-link:hover {
     color: var(--bs-primary-color);
 }
+
+@media only screen and (max-width: 576px) {
+    p {
+        font-size: var(--bs-body-mobile);
+    }
+    h1 {
+        font-size: var(--bs-h1-mobile);
+    }
+    h2 {
+        font-size: var(--bs-h2-mobile);
+    }
+    h3 {
+        font-size: var(--bs-h3-mobile);
+    }
+}
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: var(--bs-body-tablet);
+    }
+    h1 {
+        font-size: var(--bs-h1-tablet);
+    }
+    h2 {
+        font-size: var(--bs-h2-tablet);
+    }
+    h3 {
+        font-size: var(--bs-h3-tablet);
+    }
+}
+@media only screen and (min-width: 992px) {
+    p {
+        font-size: var(--bs-body-desktop);
+    }
+    h1 {
+        font-size: var(--bs-h1-desktop);
+    }
+    h2 {
+        font-size: var(--bs-h2-desktop);
+    }
+    h3 {
+        font-size: var(--bs-h3-desktop);
+    }
+}
+@media only screen and (min-width: 1292px) {
+    p {
+        font-size: var(--bs-body-desktop);
+    }
+    h1 {
+        font-size: var(--bs-h1-desktop);
+    }
+    h2 {
+        font-size: var(--bs-h2-desktop);
+    }
+    h3 {
+        font-size: var(--bs-h3-desktop);
+    }
+}
+/* these overwriting css needs for all the pages */
 /* header ends here */
 
