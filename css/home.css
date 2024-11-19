@@ -21,14 +21,111 @@
 
 }
 
+h1 {
+    font-family: "Italiana", sans-serif;
+}
+
+h2 {
+    font-family: "Noto Sans", sans-serif;
+}
+
+h3 {
+    font-family: "Figtree", sans-serif; 
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: var(--bs-body-mobile);
+    }
+    h1 {
+        font-size: var(--bs-h1-mobile);
+    }
+    h2 {
+        font-size: var(--bs-h2-mobile);
+    }
+    h3 {
+        font-size: var(--bs-h3-mobile);
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: var(--bs-body-tablet);
+    }
+    h1 {
+        font-size: var(--bs-h1-tablet);
+    }
+    h2 {
+        font-size: var(--bs-h2-tablet);
+    }
+    h3 {
+        font-size: var(--bs-h3-tablet);
+    }
+}
+@media only screen and (max-width: 992px) {
+    body {
+        font-size: var(--bs-body-desktop);
+    }
+    h1 {
+        font-size: var(--bs-h1-desktop);
+    }
+    h2 {
+        font-size: var(--bs-h2-desktop);
+    }
+    h3 {
+        font-size: var(--bs-h3-desktop);
+    }
+}
+@media only screen and (max-width: 1292px) {
+    body {
+        font-size: var(--bs-body-desktop);
+    }
+    h1 {
+        font-size: var(--bs-h1-desktop);
+    }
+    h2 {
+        font-size: var(--bs-h2-desktop);
+    }
+    h3 {
+        font-size: var(--bs-h3-desktop);
+    }
+}
+
 body {
     background-color: var(--bs-tertiary-color);
+    font-size: var(--bs-body-mobile);
 }
 
 .nav-link {
+    font-size: var(--bs-body-mobile);
     display: block;
     padding: .5rem 1rem;
     color: var(--bs-complimentary-color);
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
+
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    display: block;
+    left: 0px;
+    bottom: 0px;
+
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    background-color: var(--bs-primary-color);
+    width: 100%;
+    transition: width 0.5s;
+}
+
+.navbar-nav .nav-item .svg, .nav-link:hover {
+    color: var(--bs-primary-color);
+}
+/* header ends here */
+
