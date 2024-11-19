@@ -21,4 +21,14 @@
 
 }
 
+body {
+    background-color: var(--bs-tertiary-color);
+}
 
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: var(--bs-complimentary-color);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
