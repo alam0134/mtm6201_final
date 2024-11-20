@@ -154,6 +154,13 @@ body {
     z-index: 10;
 }
 
+.form {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    display: flex;
+}
+
 @media only screen and (max-width: 576px) {
     p {
         font-size: var(--bs-body-mobile);
