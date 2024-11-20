@@ -161,6 +161,19 @@ body {
     display: flex;
 }
 
+.carousel-img {
+    border-radius: 12px;
+}
+
+.c-img-box {
+    width: 100%;
+}
+
+.c-img-box img {
+    width: 100%;
+   background-position: center;
+}
+
 @media only screen and (max-width: 576px) {
     p {
         font-size: var(--bs-body-mobile);
