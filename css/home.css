@@ -181,7 +181,22 @@ body {
 }
 
 .t-box {
-    width: 400px;
+    width: 500px;
+}
+
+.form-control::placeholder {
+    color: var(--bs-complimentary-color); 
+    opacity: 0.3;
+}
+
+.p-f-t {
+    overflow: hidden;
+    /* in the farm-to-table if text more than the box size, then text would be hidden */
+}
+
+.logos {
+    width: 40%;
+    height: auto;
 }
 
 @media only screen and (min-width: 992px) {
