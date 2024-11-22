@@ -241,6 +241,82 @@ body {
     border-radius: 5px;
 }
 
+.facebook {
+    color: black;
+    width: 100%;
+}
+
+.facebook:hover {
+    color: #316FF6;
+    scale: 1.2;
+    transition: all 0.3s;
+}
+
+.facebook-size {
+    width: 10%;
+}
+
+.twitter {
+    color: black;
+    width: 100%;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+    scale: 1.2;
+    transition: all 0.3s;
+}
+
+.twitter-size {
+    width: 10%;
+}
+
+.youtube {
+    color: black;
+    width: 100%;
+}
+
+.youtube:hover {
+    color: #FF0000;
+    scale: 1.2;
+    transition: all 0.3s;
+}
+
+.youtube-size {
+    width: 10%;
+}
+
+.whatsapp {
+    color: black;
+    width: 100%;
+}
+
+.whatsapp:hover {
+    color: #25D366;
+    scale: 1.2;
+    transition: all 0.3s;
+}
+
+.whatsapp-size {
+    width: 10%;
+}
+
+.pinterest {
+    color: black;
+    width: 100%;
+}
+
+.pinterest:hover {
+    color: #BD081C;
+    scale: 1.2;
+    transition: all 0.3s;
+}
+
+.pinterest-size {
+    width: 10%;
+}
+
+
 
 
 @media only screen and (min-width: 992px) {
