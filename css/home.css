@@ -125,6 +125,13 @@ body {
 .navbar-nav .nav-item .svg, .nav-link:hover {
     color: var(--bs-primary-color);
 }
+svg {
+    fill: var(--bs-complimentary-color);
+}
+.svg:hover {
+    color: var(--bs-primary-color);
+    cursor: pointer;
+}
 
 /* .menu-img {
     width: 100%;
