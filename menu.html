@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Pallette/ Menu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- always keep the Bootstraap link file BEFORE other files -->
     <link rel="icon" href="svg-images/icon.svg" type="image/svg+xml">
+    <!-- icon link for favicon of the browser -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,176 @@
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-    
+   <div class="container-xxl">
+        <header>
+            <div class="container-xxl">
+               <nav class="navbar navbar-expand-lg mx-lg-3 fixed-top">
+                   <div class="container-fluid">
+                     <a class="navbar-brand ms-0 animate__animated animate__delay-2s animate__repeat-1" href="#"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="100px" height="auto"   viewBox="0 0 520.36 192.6">
+                       <defs>
+                         <style>
+                           .cls-1 {
+                             fill: #81bc4e;
+                           }
+                     
+                           .cls-2 {
+                             fill: #007f5f;
+                           }
+                         </style>
+                       </defs>
+                       <g id="acdSQG">
+                         <path class="cls-2" d="M157.66,0c-2.9,6-5,12.3-6.3,18.9-4.8,23.9-1.2,41,.3,64.3,2.3,33.8-20.9,64-46,83.8s-14,11-17.6,12.4-4.4-.5-6.8-.6c-.2-1,.3-1,.8-1.4,3.3-3,7.7-5.7,11.2-8.8,20.6-19,34.1-48.1,32.9-76.4,0-.6.4-1.9-.5-1.7-5.1,28.2-15.5,59.9-41.4,75.4,1.9-8.1,2.9-16.4,2.5-24.7-1.2-24.8-8.8-41-3.3-67.6C91.36,35.4,122.66,12,157.66,0Z"/>
+                         <path class="cls-1" d="M18.36,48.9c2.6,13.8,10.8,27.7,21.5,36.7s13.6,8.5,19.7,13.7c14.5,12.4,25.8,34.8,24.7,54.2-.8,13.8-7.8,24.6-13.5,36.7-.9.1-.4-1.1-.4-1.6.6-4.8,2.2-9.8,2.8-14.7,2.1-18.4-3.3-38.5-16.7-51.6-.4,0-.3.5-.2.7.6,1.5,3.5,5,4.6,6.9,10.1,18.1,14.6,38.3,6.7,58.2-1.9-4.7-3.1-9.5-5.4-14.1-11.5-22.4-30.8-21.7-46-38.3C-6.14,111.5-3.64,81.9,13.16,55.5c1.1-1.7,2.6-4.3,3.8-5.7s.5-1,1.4-.8v-.1Z"/>
+                       </g>
+                       <path d="M213.06,25.9c9.8,0,16.9,2,21.4,6.1,4.5,4.1,6.7,9.7,6.7,17s-.9,8.3-2.8,12.1c-1.8,3.7-4.9,6.8-9.3,9.1s-10.2,3.5-17.6,3.5h-7.5v27.8h-13.5V25.9h22.6ZM212.16,37.1h-8.1v25.3h6.1c5.5,0,9.7-1,12.7-3s4.5-5.3,4.5-9.9-1.2-7.3-3.7-9.3-6.3-3.1-11.5-3.1Z"/>
+                       <path d="M265.96,101.4h-13.3V21h13.3v80.4Z"/>
+                       <path d="M303.66,43c7.4,0,13,1.6,16.9,4.9,3.8,3.2,5.8,8.3,5.8,15v38.5h-9.4l-2.6-7.9h-.4c-2.5,3.1-5.1,5.4-7.8,6.8-2.8,1.4-6.5,2.2-11.2,2.2s-9.4-1.4-12.8-4.3-5.1-7.4-5.1-13.4,2.2-10.4,6.5-13.3c4.3-3,10.9-4.6,19.7-5l9.9-.3v-2.9c0-3.7-.9-6.3-2.6-7.8-1.8-1.6-4.2-2.3-7.4-2.3s-5.7.4-8.3,1.2c-2.6.8-5.3,1.8-7.9,3l-4.2-9.3c2.8-1.5,6-2.7,9.7-3.6,3.6-.9,7.4-1.4,11.4-1.4l-.2-.1ZM313.06,74.3l-7,.2c-5.9.2-9.9,1.2-12.2,3-2.3,1.8-3.4,4.2-3.4,7.2s.8,4.7,2.4,5.9c1.6,1.2,3.7,1.7,6.3,1.7,3.9,0,7.2-1.1,9.8-3.3,2.7-2.2,4-5.5,4-9.9v-4.9l.1.1Z"/>
+                       <path d="M371.56,43c6.4,0,11.4,1.7,15.1,5,3.6,3.3,5.4,8.7,5.4,16.1v37.3h-13.3v-34.7c0-4.3-.8-7.5-2.5-9.7s-4.4-3.2-8-3.2c-5.4,0-9,1.7-11,5.1-2,3.4-3,8.2-3,14.5v28h-13.3v-57.3h10.3l1.9,7.5h.7c1.8-3,4.4-5.1,7.6-6.5s6.6-2.1,10.2-2.1h-.1Z"/>
+                       <path d="M428.96,91.8c1.6,0,3.2-.2,4.8-.5,1.6-.3,3-.7,4.4-1.1v9.9c-1.4.7-3.2,1.3-5.5,1.7-2.3.4-4.6.6-7.1.6s-6.3-.5-8.9-1.6-4.7-2.9-6.3-5.6c-1.6-2.7-2.3-6.5-2.3-11.3v-29.8h-7.7v-5.8l8.5-4.7,4.2-12.2h8.4v12.6h16.3v10h-16.3v29.7c0,2.7.7,4.7,2.2,6,1.4,1.3,3.3,2,5.4,2l-.1.1Z"/>
+                       <path d="M213.06,115.9c9.8,0,16.9,2,21.4,6.1s6.7,9.7,6.7,17-.9,8.3-2.8,12.1c-1.8,3.7-4.9,6.8-9.3,9.1s-10.2,3.5-17.6,3.5h-7.5v27.8h-13.5v-75.5h22.5l.1-.1ZM212.16,127.1h-8.1v25.3h6.1c5.5,0,9.7-1,12.7-3s4.5-5.3,4.5-9.9-1.2-7.3-3.7-9.3-6.3-3.1-11.5-3.1Z"/>
+                       <path d="M271.26,133c7.4,0,13,1.6,16.9,4.9,3.8,3.2,5.8,8.3,5.8,15v38.5h-9.4l-2.6-7.9h-.4c-2.5,3.1-5.1,5.4-7.8,6.8-2.8,1.4-6.5,2.2-11.2,2.2s-9.4-1.4-12.8-4.3c-3.4-2.9-5.1-7.4-5.1-13.4s2.2-10.4,6.5-13.3c4.3-3,10.9-4.6,19.7-5l9.9-.3v-2.9c0-3.7-.9-6.3-2.6-7.8-1.8-1.6-4.2-2.3-7.4-2.3s-5.7.4-8.3,1.2c-2.6.8-5.3,1.8-7.9,3l-4.2-9.3c2.8-1.5,6-2.7,9.7-3.6,3.6-.9,7.4-1.4,11.4-1.4l-.2-.1ZM280.66,164.3l-7,.2c-5.9.2-9.9,1.2-12.2,3-2.3,1.8-3.4,4.2-3.4,7.2s.8,4.7,2.4,5.9,3.7,1.7,6.3,1.7c3.9,0,7.2-1.1,9.8-3.3,2.7-2.2,4-5.5,4-9.9v-4.9l.1.1Z"/>
+                       <path d="M317.56,191.4h-13.3v-80.4h13.3v80.4Z"/>
+                       <path d="M353.36,133c7.7,0,13.8,2.3,18.2,6.9,4.5,4.6,6.7,11,6.7,19.1v6.8h-37.9c.1,5.2,1.6,9.3,4.3,12.1,2.8,2.9,6.6,4.3,11.4,4.3s7-.4,9.9-1.1c3-.7,6-1.8,9.1-3.2v10.7c-2.8,1.3-5.7,2.3-8.8,3-3,.6-6.7,1-10.9,1s-10.6-1.1-14.9-3.2c-4.3-2.2-7.7-5.4-10.1-9.7s-3.6-9.8-3.6-16.3c0-9.8,2.4-17.3,7.2-22.4,4.8-5.1,11.2-7.7,19.2-7.7l.2-.3ZM353.36,142.9c-3.6,0-6.5,1.1-8.7,3.4-2.2,2.3-3.5,5.7-3.9,10.2h24.6c0-3.9-1.1-7.2-3-9.8s-5-3.9-9-3.9v.1Z"/>
+                       <path d="M409.76,181.8c1.6,0,3.2-.2,4.8-.5,1.6-.3,3-.7,4.4-1.1v9.9c-1.4.7-3.2,1.3-5.5,1.7s-4.6.6-7.1.6-6.3-.5-8.9-1.6-4.7-2.9-6.3-5.6c-1.6-2.7-2.3-6.5-2.3-11.3v-29.8h-7.7v-5.8l8.5-4.7,4.2-12.2h8.4v12.6h16.3v10h-16.3v29.7c0,2.7.7,4.7,2.2,6,1.4,1.3,3.3,2,5.4,2l-.1.1Z"/>
+                       <path d="M452.76,181.8c1.6,0,3.2-.2,4.8-.5,1.6-.3,3-.7,4.4-1.1v9.9c-1.4.7-3.2,1.3-5.5,1.7s-4.6.6-7.1.6-6.3-.5-8.9-1.6-4.7-2.9-6.3-5.6c-1.6-2.7-2.3-6.5-2.3-11.3v-29.8h-7.7v-5.8l8.5-4.7,4.2-12.2h8.4v12.6h16.3v10h-16.3v29.7c0,2.7.7,4.7,2.2,6,1.4,1.3,3.3,2,5.4,2l-.1.1Z"/>
+                       <path d="M495.46,133c7.7,0,13.8,2.3,18.2,6.9,4.5,4.6,6.7,11,6.7,19.1v6.8h-37.9c.1,5.2,1.6,9.3,4.3,12.1,2.8,2.9,6.6,4.3,11.4,4.3s7-.4,9.9-1.1c3-.7,6-1.8,9.1-3.2v10.7c-2.8,1.3-5.7,2.3-8.8,3-3,.6-6.7,1-10.9,1s-10.6-1.1-14.9-3.2c-4.3-2.2-7.7-5.4-10.1-9.7s-3.6-9.8-3.6-16.3c0-9.8,2.4-17.3,7.2-22.4,4.8-5.1,11.2-7.7,19.2-7.7l.2-.3ZM495.46,142.9c-3.6,0-6.5,1.1-8.7,3.4-2.2,2.3-3.5,5.7-3.9,10.2h24.6c0-3.9-1.1-7.2-3-9.8s-5-3.9-9-3.9v.1Z"/>
+                     </svg>
+                     </a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                       <ul class="navbar-nav">
+                         <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link mx-lg-4" href="#">Menu</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Reservation</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link mx-lg-4" href="#">Catering</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">About Us</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link mx-lg-4" href="#">Contact Us</a>
+                         </li>
+                       </ul>
+                     </div>
+                     <div class="d-flex d-none d-lg-block ms-lg-0 nav-link">
+                       <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="auto" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                       </svg>
+                     </div>
+                     <div class="d-flex d-none d-lg-block ms-lg-0 nav-link">
+                       <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="auto" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                         <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                       </svg>
+                     </div>
+                   </div>
+                 </nav>
+            </div>
+           </header>
+           <main>
+            <section class="breakfast" aria-labelledby="breakfast-menu">
+              <div class="" id="breakfast-heading">
+
+              </div>
+            </section>
+           </main>
+
+
+
+
+
+           
+  </div>
+    <footer class="footer container-fluid mt-5">
+        <div class="d-md-flex">
+          <div class="d-flex col-md-6 col-lg-6 col-xxl-3">
+            <div class="col-6 ps-5 mt-5 justify-content-center">
+              <a class="nav-link p-0" href="#"><p class="p">Contact Us</p></a>
+              <a class="nav-link p-0" href="#"><p class="p">Address</p></a>
+              <a class="nav-link p-0" href="#"><p class="p">Reservation</p></a>
+              <a class="nav-link p-0" href="#"><p class="p">About Us</p></a>
+              <a class="nav-link p-0" href="#"><p class="p">Community</p></a>
+            </div>
+            <div class="col-6 ps-5 ps-md-0 mt-5">
+              <a class="nav-link p-0" href="#"><p class="p">Orders</p></a>
+              <a class="nav-link p-0" href="#"><p class="p">Hours</p></a>
+              <a class="nav-link p-0" href="#"><p class="p">Catering</p></a>
+              <a class="nav-link p-0" href="#"><p class="p">Blogs</p></a>
+              <a class="nav-link p-0" href="#"><p class="p">Career</p></a>
+            </div>
+          </div>
+          <div class="d-xxl-flex d-none d-xxl-block col-xxl-3">
+            <div class="col-6 ps-5 mt-5 justify-content-center">
+              <p class="p">Mon-Thu</p>
+              <p class="p">Lunch</p>
+              <p class="p">9am-12pm</p>
+              <p class="p">Dinner</p>
+              <p class="p">4pm-11pm</p>
+            </div>
+            <div class="col-6 ps-5 ps-md-0 mt-5">
+              <p class="p">Fri-Sun</p>
+              <p class="p">Lunch</p>
+              <p class="p">10am-12pm</p>
+              <p class="p">Dinner</p>
+              <p class="p">3pm-11pm</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mt-5">
+            <div>
+              <form class="row g-3 justify-content-center">
+                <div class="col-auto">
+                  <label for="exampleFormControlInput1" class="visually-hidden">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn-f btn-footer mb-3">Subcribe</button>
+                  <!-- made a different style class for the subcription button -->
+                </div>
+              </form>
+            </div>
+            <div class="d-flex justify-content-around mt-2 mb-3">
+              <div class="text-center facebook-size">
+                <a class="facebook" href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-facebook facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></a>
+              </div>
+              <div class="text-center twitter-size">
+                <a class="twitter" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-twitter twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg></a>
+              </div>
+              <div class="text-center youtube-size">
+                <a class="youtube" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-youtube youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg></a>
+              </div>
+              <div class="text-center whatsapp-size">
+                <a class="whatsapp" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-whatsapp whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg></a>
+              </div>
+              <div class="text-center pinterest-size">
+                <a class="pinterest" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-pinterest pinterest" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                </svg></a>
+              </div>
+                <!-- bring the icon from Bootstrap and give a class to the ancheer tag and same class to the SVG and change the color to black in css, then on hover effect give the brand color. -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5">
+          <p class="p">&copy; 2024 Plant Palette. All rights reserved.</p>
+        </div>
+      </footer>  
 
 
 

@@ -3,6 +3,7 @@
     --bs-secondary-color: #81BC4E;
     --bs-tertiary-color:#E9EDC9;
     --bs-complimentary-color: #000000;
+    --bs-btn-active-bg: #007F5F;
     --bs-body-mobile: 14px;
     --bs-h3-mobile: 18px;
     --bs-h2-mobile: 24px;
@@ -41,12 +42,19 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+
+
 .btn-primary {
     color: #fff;
     background-color: var(--bs-primary-color);
     border-color: var(--bs-primary-color);
     border-radius: 12px;
 }
+
+.btn-primary:active {
+    background-color: var(--bs-primary-color);
+}
+
 
 .btn-primary:hover {
     color: #ffffff;
@@ -68,15 +76,13 @@
     transition: all 0.3s;
 }
 
-.btn-primary:active {
-    background-color: var(--bs-primary-color);
-}
 .btn-primary:focus {
     background-color: var(--bs-primary-color);
 }
 
 h1 {
     font-family: "Italiana", sans-serif;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -95,6 +101,10 @@ body {
 body {
     background-color: var(--bs-tertiary-color);
     font-size: var(--bs-body-mobile);
+}
+
+nav {
+    background-color: var(--bs-tertiary-color);
 }
 
 .nav-link {
@@ -253,7 +263,7 @@ body {
 }
 
 .facebook-size {
-    width: 10%;
+    width: 7%;
 }
 
 .twitter {
@@ -268,7 +278,7 @@ body {
 }
 
 .twitter-size {
-    width: 10%;
+    width: 7%;
 }
 
 .youtube {
@@ -283,7 +293,7 @@ body {
 }
 
 .youtube-size {
-    width: 10%;
+    width: 7%;
 }
 
 .whatsapp {
@@ -298,7 +308,7 @@ body {
 }
 
 .whatsapp-size {
-    width: 10%;
+    width: 7%;
 }
 
 .pinterest {
@@ -313,7 +323,7 @@ body {
 }
 
 .pinterest-size {
-    width: 10%;
+    width: 7%;
 }
 
 
