@@ -344,6 +344,19 @@ nav {
     filter: brightness(0.7);
 }
 
+.filter {
+    margin-top: 120px;
+}
+
+.accordion-button {
+    color: white;
+    background-color: var(--bs-primary-color);
+}
+
+.accordion-body {
+    background-color: var(--bs-tertiary-color);
+}
+
 @media only screen and (max-width: 576px) {
     p {
         font-size: var(--bs-body-mobile);

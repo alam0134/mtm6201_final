@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- font should be before css and after Bootstrap link -->
     <link rel="stylesheet" href="css/menu.css">
+    <!-- all the images i used in this website came from unplash.com -->
 </head>
 <body>
    <div class="container-xxl">
@@ -93,100 +94,335 @@
            </header>
            <main>
             <!-- breakfast section -->
-            <section class="breakfast mt-5" aria-labelledby="breakfast-menu">
-              <div class="" id="breakfast-heading">
-                <div class="container-fluid d-flex justify-content-lg-end">
-                  <div class="row mt-5 w-lg-75">
-                    <!-- ( w-lg-75) is my custom css that i styled in css media quaries for lg screen. I don't know why bootstrap class of this is not working -->
-                    <div class="h1 text-center mb-5">Breakfast</div>
-                    <div class=" col-6 col-md-4">
-                      <a href="#" class="text-decoration-none">
-                        <div class="my-card">
-                          <div class="my-card-image mb-2">
-                            <img src="placeholder-images/meal-1.jpg" class="c-img round-img" alt="image of meal">
-                          </div>
-                          <div class="my-card-body mb-5">
-                            <p class="card-text h3">Avocado Toast with Chickpea Scramble</p>
-                          </div>
-                        </div>
-                      </a>  
-                    </div>
-                    <div class=" col-6 col-md-4">
-                      <a href="" class="text-decoration-none">
-                        <div class="my-card">
-                          <div class="my-card-image mb-2">
-                            <img src="placeholder-images/meal-2.jpg" class="c-img round-img" alt="image of meal">
-                          </div>
-                          <div class="my-card-body mb-5">
-                            <p class="card-text h3">Coconut Chia Pudding with Fresh Berries</p>
-                          </div>
-                        </div>  
-                      </a>
-                    </div>
-                    <div class=" col-6 col-md-4">
-                      <a href="" class="text-decoration-none">
-                        <div class="my-card">
-                          <div class="my-card-image mb-2">
-                            <img src="placeholder-images/meal-10.jpg" class="c-img round-img" alt="image of something">
-                          </div>
-                          <div class="my-card-body mb-5">
-                            <p class="card-text h3">Vegan Banana Pancakes with Maple Syrup</p>
-                          </div>
-                        </div>  
-                      </a>
-                    </div>
-                    <div class=" col-6 col-md-4">
-                      <a href="" class="text-decoration-none">
-                        <div class="my-card">
-                          <div class="my-card-image mb-2">
-                            <img src="placeholder-images/meal-3.jpg" class="c-img round-img" alt="image of something">
-                          </div>
-                          <div class="my-card-body mb-5">
-                            <p class="card-text h3">Sweet Potato and Black Bean Breakfast Burrito</p>
-                          </div>
-                        </div>  
-                      </a>
-                    </div>
-                    <div class=" col-6 col-md-4">
-                      <a href="" class="text-decoration-none">
-                        <div class="my-card">
-                          <div class="my-card-image mb-2">
-                            <img src="placeholder-images/meal-7.jpg" class="c-img round-img" alt="image of something">
-                          </div>
-                          <div class="my-card-body mb-5">
-                            <p class="card-text h3">Overnight Oats with Almond Butter and Fruits</p>
-                          </div>
-                        </div> 
-                      </a> 
-                    </div>
-                    <div class=" col-6 col-md-4">
-                      <a href="" class="text-decoration-none">
-                        <div class="my-card">
-                          <div class="my-card-image mb-2">
-                            <img src="placeholder-images/meal-5.jpg" class="c-img round-img" alt="image of something">
-                          </div>
-                          <div class="my-card-body mb-5">
-                            <p class="card-text h3">Tofu Breakfast Bowl with Spinach and Quinoa</p>
-                          </div>
-                        </div> 
-                      </a> 
+            <div class="row">
+              <div class="accordion col-2 filter fixed-top d-none d-lg-block" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Breakfast
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <a class="text-decoration-none" href="#breakfast-menu"><p>Best Seller</p></a>
+                      <a class="text-decoration-none" href="#breakfast-menu"><p>Eggs</p></a>
+                      <a class="text-decoration-none" href="#breakfast-menu"><p>Soup</p></a>
+                      <a class="text-decoration-none" href="#breakfast-menu"><p>Special</p></a>
                     </div>
                   </div>
-                 </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Lunch
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <a class="text-decoration-none" href="#lunch-menu"><p>Kids meal</p></a>
+                      <a class="text-decoration-none" href="#lunch-menu"><p>Seasonal</p></a>
+                      <a class="text-decoration-none" href="#lunch-menu"><p>Local</p></a>
+                      <a class="text-decoration-none" href="#lunch-menu"><p>Special</p></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Dinner
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <a class="text-decoration-none" href="#dinner-menu"><p>Cristmas Special</p></a>
+                      <a class="text-decoration-none" href="#dinner-menu"><p>Seasonal</p></a>
+                      <a class="text-decoration-none" href="#dinner-menu"><p>New Year Special</p></a>
+                      <a class="text-decoration-none" href="#dinner-menu"><p>Thai</p></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <section class="breakfast mt-5" aria-labelledby="breakfast-menu">
+                  <div class="" id="breakfast-menu">
+                    <div class="container-fluid d-flex justify-content-lg-center">
+                      <div class="row mt-5 w-lg-75">
+                        <!-- ( w-lg-75) is my custom css that i styled in css media quaries for lg screen. I don't know why bootstrap class of this is not working -->
+                        <h1 class="h1 text-center mb-5">Breakfast</h1>
+                        <div class=" col-6 col-md-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-1.jpg" class="c-img round-img" alt="image of meal">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Avocado Toast with Chickpea Scramble</p>
+                              </div>
+                            </div>
+                          </a>  
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-2.jpg" class="c-img round-img" alt="image of meal">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Coconut Chia Pudding with Fresh Berries</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-10.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Vegan Banana Pancakes with Maple Syrup</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-3.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Sweet Potato and Black Bean Breakfast Burrito</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-7.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Overnight Oats with Almond Butter and Fruits</p>
+                              </div>
+                            </div> 
+                          </a> 
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-5.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Tofu Breakfast Bowl with Spinach and Quinoa</p>
+                              </div>
+                            </div> 
+                          </a> 
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </section>
+                <!-- lunch section -->
+                <section class="lunch" aria-labelledby="lunch-menu">
+                  <div class="" id="lunch-menu">
+                    <div class="container-fluid d-flex justify-content-lg-center">
+                      <div class="row mt-5 w-lg-75">
+                        <!-- ( w-lg-75) is my custom css that i styled in css media quaries for lg screen. I don't know why bootstrap class of this is not working -->
+                        <h1 class="h1 text-center mb-5">Lunch</h1>
+                        <div class=" col-6 col-md-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-7.jpg" class="c-img round-img" alt="image of meal">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Grilled Veggie and Hummus Wrap</p>
+                              </div>
+                            </div>
+                          </a>  
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-11.jpg" class="c-img round-img" alt="image of meal">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Chickpea Salad Sandwich</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-10.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Thai Peanut Noodle Bowl</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-5.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Quinoa and Roasted Veggie Buddha Bowl</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-15.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Spicy Black Bean and Avocado Burrito</p>
+                              </div>
+                            </div> 
+                          </a> 
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-3.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Stuffed Sweet Potatoes with Lentil Curry</p>
+                              </div>
+                            </div> 
+                          </a> 
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </section>
+                <!-- dinner section -->
+                <section class="dinner" aria-labelledby="dinner-menu">
+                  <div class="" id="dinner-menu">
+                    <div class="container-fluid d-flex justify-content-lg-center">
+                      <div class="row mt-5 w-lg-75">
+                        <!-- ( w-lg-75) is my custom css that i styled in css media quaries for lg screen. I don't know why bootstrap class of this is not working -->
+                        <h1 class="h1 text-center mb-5">Dinner</h1>
+                        <div class=" col-6 col-md-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-17 (2).jpg" class="c-img round-img" alt="image of meal">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Grilled Veggie and Hummus Wrap</p>
+                              </div>
+                            </div>
+                          </a>  
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-18.jpg" class="c-img round-img" alt="image of meal">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Chickpea Salad Sandwich</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-19.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Thai Peanut Noodle Bowl</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-20 (2).jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Quinoa and Roasted Veggie Buddha Bowl</p>
+                              </div>
+                            </div>  
+                          </a>
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-20.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Spicy Black Bean and Avocado Burrito</p>
+                              </div>
+                            </div> 
+                          </a> 
+                        </div>
+                        <div class=" col-6 col-md-4">
+                          <a href="" class="text-decoration-none">
+                            <div class="my-card">
+                              <div class="my-card-image mb-2">
+                                <img src="placeholder-images/meal-3.jpg" class="c-img round-img" alt="image of something">
+                              </div>
+                              <div class="my-card-body mb-5">
+                                <p class="card-text h3">Stuffed Sweet Potatoes with Lentil Curry</p>
+                              </div>
+                            </div> 
+                          </a> 
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <section class="heading-2">
+              <div class="text-center">
+                <h2 class="h2">Hungry for a Plant-Based Adventure?</h2>
+              </div>
+              <div class="text-center">
+                <p class="p">At Plant Palette, we’re all about fresh, plant-based ingredients that burst with flavor.</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <!-- <button type="button" class="btn btn-outline-secondary me-3">Order Online</button> -->
+                <a class="btn btn-outline-secondary me-3" href="#" role="button">Order Online</a>
+                <!-- <button type="button" class="btn btn-primary animate__animated animate__rubberBand animate__delay-3s animate__repeat-2">Book A Table</button> -->
+                <a class="btn btn-primary" href="#" role="button">Book A Table</a>
               </div>
             </section>
-            <!-- lunch section -->
-            <section class="breakfast" aria-labelledby="lunch-menu">
-              <div class="" id="lunch-heading">
-                
+            <div class=" container mt-5 col-xxl-6">
+              <div class="mb-3">
+                <h2 class="h2 text-center">Delivery Partners</h2>
               </div>
-            </section>
-            <!-- dinner section -->
-            <section class="breakfast" aria-labelledby="dinner-menu">
-              <div class="" id="dinner-heading">
-                
+              <div class="d-flex justify-content-around">
+                <div class="d-flex text-center">
+                  <a href="#"><img class="delivery-logos" src="svg-images/doordash-svgrepo-com.svg" alt="doordash logo"></a>
+                </div>
+                <div class="d-flex text-center">
+                  <a href="#"><img class="delivery-logos" src="svg-images/skipthedishes-svgrepo-com.svg" alt="skip the dishes logo"></a>
+                </div>
+                <div class="d-flex text-center">
+                  <a href="#"><img class="delivery-logos" src="svg-images/ubereats-svgrepo-com.svg" alt="uber eats logo"></a>
+                </div>
               </div>
-            </section>
+            </div>
            </main>
 
 
@@ -249,22 +485,22 @@
                 </svg></a>
               </div>
               <div class="text-center twitter-size">
-                <a class="twitter" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-twitter twitter" viewBox="0 0 16 16">
+                <a class="twitter" href="https://x.com/?lang=en"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-twitter twitter" viewBox="0 0 16 16">
                   <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
                 </svg></a>
               </div>
               <div class="text-center youtube-size">
-                <a class="youtube" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-youtube youtube" viewBox="0 0 16 16">
+                <a class="youtube" href="https://www.youtube.com/"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-youtube youtube" viewBox="0 0 16 16">
                   <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                 </svg></a>
               </div>
               <div class="text-center whatsapp-size">
-                <a class="whatsapp" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-whatsapp whatsapp" viewBox="0 0 16 16">
+                <a class="whatsapp" href="https://www.whatsapp.com/"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-whatsapp whatsapp" viewBox="0 0 16 16">
                   <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                 </svg></a>
               </div>
               <div class="text-center pinterest-size">
-                <a class="pinterest" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-pinterest pinterest" viewBox="0 0 16 16">
+                <a class="pinterest" href="https://www.pinterest.com/"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="auto" fill="currentColor" class="bi bi-pinterest pinterest" viewBox="0 0 16 16">
                   <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
                 </svg></a>
               </div>
