@@ -380,7 +380,7 @@ nav {
         font-size: var(--bs-h3-desktop);
     }
 }
-@media only screen and (min-width: 1292px) {
+@media only screen and (min-width: 1200px) {
     p {
         font-size: var(--bs-body-desktop);
     }
