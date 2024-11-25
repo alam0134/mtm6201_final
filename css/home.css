@@ -326,6 +326,35 @@ nav {
     width: 7%;
 }
 
+/* logo animation  */
+@keyframes cls-1 {
+    0% {
+      fill: var(--bs-primary-color);
+    }
+    100% {
+      fill: var(--bs-secondary-color);
+      scale: 0.9;
+    }
+  }
+  
+  @keyframes cls-2 {
+    0% {
+      fill: var(--bs-secondary-color);
+      scale: 0.9;
+    }
+    100% {
+      fill: var(--bs-primary-color);
+    }
+  }
+  
+  .cls-1 {
+    animation: cls-1 1s infinite alternate;
+  }
+  
+  .cls-2 {
+    animation: cls-2 1s infinite alternate;
+  }
+
 
 
 
