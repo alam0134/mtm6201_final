@@ -127,6 +127,25 @@ body {
     font-size: var(--bs-body-mobile);
 }
 
+.skip-link {
+    position: absolute;
+    top: -1000px;
+    left: 45%;
+    background: var(--bs-primary-color); /* Accessible color */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: var(--bs-body-desktop);
+    border-radius: 12px;
+    z-index: 1000;
+    transition: top 0.7s ease;
+}
+  
+.skip-link:focus {
+    top: 80px; /* Bring it into view when focused */
+    outline: 5px solid red; /* add outline for better visibility */
+}
+
 nav {
     background-color: var(--bs-tertiary-color);
 }
