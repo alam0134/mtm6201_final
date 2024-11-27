@@ -57,10 +57,10 @@
                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                        <span class="navbar-toggler-icon"></span>
                      </button>
-                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                     <nav class="collapse navbar-collapse justify-content-center" id="navbarNav" aria-label="Main navigation">
                        <ul class="navbar-nav">
                          <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                           <a class="nav-link active" href="home.html">Home</a>
                          </li>
                          <li class="nav-item">
                            <a class="nav-link mx-lg-4" href="menu.html">Menu</a>
@@ -78,31 +78,36 @@
                            <a class="nav-link mx-lg-4" href="#">Contact Us</a>
                          </li>
                        </ul>
+                     </nav>
+                     <div class="d-flex d-none d-lg-block ms-lg-0 nav-link">
+                       <a class="nav-icon" href="#" role="search" aria-label="Search food">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="auto" fill="currentColor" class="svg bi bi-search" viewBox="0 0 16 16" role="img" aria-hidden="true">
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg>
+                       </a>
                      </div>
                      <div class="d-flex d-none d-lg-block ms-lg-0 nav-link">
-                       <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="auto" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                       </svg>
-                     </div>
-                     <div class="d-flex d-none d-lg-block ms-lg-0 nav-link">
-                       <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="auto" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                         <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                       </svg>
+                       <a class="nav-icon" href="#" aria-label="checkout the bag">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="auto" fill="currentColor" class="svg bi bi-bag" viewBox="0 0 16 16">
+                          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        </svg>
+                       </a>
                      </div>
                    </div>
                  </nav>
             </div>
         </header>
-        <main id="main-content" class="">
             <div class="container">
-                <div class="row mt-5">
+                <main id="main-content">
+                  <div class="row mt-5">
                     <div class="img-menu pt-5 col-lg-6">
                         <img src="placeholder-images/meal-10.jpg" class="img-fluid img" alt="image of Coconut Chia Pudding With Fresh Berries">
                     </div>
                     <div class="mt-5 img-menu col-lg-6 d-flex flex-column justify-content-between">
                         <div class="">
                         <h2 class="h2 mb-2">$12.99</h2>
-                        <div class="align-middle d-inline me-2 mb-3" aria-label="rating">
+                      <div aria-label="reviews 34 and rating 4.8 out of 5">
+                          <div class="align-middle d-inline me-2 mb-3" aria-hidden="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                             </svg>
@@ -119,15 +124,16 @@
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                             </svg>
                         </div>
-                        <div class="d-inline align-bottom mb-4"><span>4.8 (34)</span></div>
+                        <div class="d-inline align-bottom mb-4" aria-hidden="true"><span>4.8 (34)</span></div>
+                     </div>
                         <h1 class="h1 mt-3 mb-3">Coconut Chia Pudding With Fresh Berries (580Cals)</h1>
-                        <p class="p mb-3">A creamy, fiber-rich pudding topped with fresh berries, perfect for a nutritious, refreshing snack or breakfast.</p>
+                        <p class="p mb-3 opacity-75">A creamy, fiber-rich pudding topped with fresh berries, perfect for a nutritious, refreshing snack or breakfast.</p>
                         </div>
                         <div class="d-grid gap-2">
                             <!-- <button type="button" class="btn btn-outline-secondary me-3">Order Online</button> -->
                             <a class="btn btn-outline-secondary" href="#" role="button">Order Online</a>
                             <!-- <button type="button" class="btn btn-primary animate__animated animate__rubberBand animate__delay-3s animate__repeat-2">Book A Table</button> -->
-                            <a class="btn btn-primary" href="#" role="button">Add To Cart</a>
+                            <a class="btn btn-primary" href="#" role="button">Add To Bag</a>
                         </div>
                     </div>
                 </div>
@@ -136,64 +142,65 @@
                         <div class="col-md-6 mt-5">
                             <div><h2 class="h3 text-center">Nutrition Details </h2></div>
                             <div class="d-flex justify-content-between mb-1 b-list"> 
-                                <div class="p">Calories</div>
-                                <div class="p">580kcal</div>
+                              <dt>Calories</dt>
+                              <dd>580kcal</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Protein</div>
-                                <div>10g</div>
+                              <dt>Protein</dt>
+                              <dd>10g</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Carbs</div>
-                                <div>45g</div>
+                              <dt>Carbs</dt>
+                              <dd>45g</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Sugars</div>
-                                <div>35g</div>
+                              <dt>Sugars</dt>
+                              <dd>35g</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Fiber</div>
-                                <div>5g</div>
+                              <dt>Fiber</dt>
+                              <dd>5g</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Sodium</div>
-                                <div>80mg</div>
+                              <dt>Sodium</dt>
+                              <dd>80mg</dd>
                             </div>
                         </div>
                         <div class="col-md-6 mt-5">
                             <div><h2 class="h3 text-center">Ingredient Details</h2></div>
                             <div class="d-flex justify-content-between mb-1 b-list"> 
-                                <div class="p">Chia Seeds</div>
-                                <div class="p">3 tbsp</div>
+                              <dt>Chia Seeds</dt>
+                              <dd>3 tbsp</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Coconut Milk</div>
-                                <div>1 cup</div>
+                              <dt>Coconut Milk</dt>
+                              <dd>1 cup</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Maple Syrup</div>
-                                <div>1 tbsp</div>
+                              <dt>Maple Syrup</dt>
+                              <dd>1 tbsp</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Vanilla Extract</div>
-                                <div>1 tsp</div>
+                              <dt>Vanilla Extract</dt>
+                              <dd>1 tsp</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Mixed Berries</div>
-                                <div>1/2 cup</div>
+                              <dt>Mixed Berries</dt>
+                              <dd>1/2 cup</dd>
                             </div>
                             <div class="d-flex justify-content-between mb-1 b-list">
-                                <div>Coconut Flakes</div>
-                                <div>1 tbsp</div>
+                              <dt>Coconut Flakes</dt>
+                              <dd>1 tbsp</dd>
                             </div>
                         </div>
                     </div>
                 </div>
+                </main>
                 <div class="mt-5">
-                    <div><h2 class="h2 text-center mb-4 d-none d-lg-block">We believe you will like </h2></div>
+                    <div><h2 class="h2 text-center mb-4 d-none d-lg-block">We Believe You Will Also Like </h2></div>
                     <div class="container text-center d-none d-lg-block">
                         <div class="row align-items-start">
-                          <div class="col">
+                          <div class="col menu-image">
                             <a href="menu.html"><img class="c-img-box col-lg-4 round-img" src="placeholder-images/meal-20 (2).jpg" alt="image of meal"></a>
                           </div>
                           <div class="col">
@@ -225,7 +232,6 @@
                     </div>
                 </div>
             </div>
-        </main>
     </div>   
 
 

@@ -21,6 +21,22 @@
 
 }
 
+
+/* a:focus-visible {
+    outline: none;
+    border: 5px red solid;
+} */
+
+.nav-icon {
+    text-decoration: none;
+    color: var(--bs-complimentary-color);
+}
+
+svg:focus-visible, img:focus-visible,  button:focus-visible, .facebook:focus-visible, .menu-image:focus-visible {
+    outline: none;
+    border: 5px red solid;
+}
+
 /* logo animation  */
 @keyframes cls-1 {
     0% {
@@ -143,7 +159,7 @@ body {
   
 .skip-link:focus {
     top: 80px; /* Bring it into view when focused */
-    outline: 5px solid red; /* add outline for better visibility */
+    /* outline: 5px solid red; add outline for better visibility */
 }
 
 nav {
@@ -203,11 +219,6 @@ nav {
           
       }
 } */
-.img-menu {
-   /* width: 100%;
-   height: auto; */
-   /* background-size: cover; */
-}
 
  .img-fluid {
     border-radius: 12px;
