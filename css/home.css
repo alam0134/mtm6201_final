@@ -174,7 +174,7 @@ nav {
     width: 100%;
     margin-top: 2rem;
     height: 600px;
-    opacity: 0.9;
+    opacity: 0.7;
     /* background-color: #fff; */
     filter: blur(10px);
 }
@@ -375,8 +375,15 @@ nav {
     animation: cls-2 1s infinite alternate;
   }
 
+  
 
 
+  @media only screen and (max-width: 355px) {
+    .hidden-sm {
+        display: none;
+    }
+    /* i don't know why d-sm-none is not working so i put a media quaries to hide some buttons bolow 355px screen size, otherwise its over stacking */
+  }
 
 @media only screen and (min-width: 992px) {
     .box img {
