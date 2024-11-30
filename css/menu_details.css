@@ -21,10 +21,26 @@
 
 }
 
+
 a:focus-visible {
     outline: none;
-    border: solid 5px red;
+    border: solid 8px red;
 }
+
+.btn:focus-visible {
+    outline: none;
+    border: solid 8px red;
+}
+
+.menu-image a {
+   display: block;
+}
+
+.logo a {
+    display: block;
+}
+
+
 
 
 .nav-icon {

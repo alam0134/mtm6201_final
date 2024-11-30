@@ -143,8 +143,26 @@ body {
   
 .skip-link:focus {
     top: 80px; /* Bring it into view when focused */
-    outline: 5px solid red; /* add outline for better visibility */
+    outline: 8px solid red; /* add outline for better visibility */
 }
+
+a:focus-visible {
+    outline: none;
+    border: solid 8px red;
+}
+
+.btn:focus-visible {
+    outline: none;
+    border: solid 8px red;
+}
+
+a {
+    display: block;
+}
+
+/* .focus:focus-visible {
+    border: solid 8px red;
+} */
 
 nav {
     background-color: var(--bs-tertiary-color);
